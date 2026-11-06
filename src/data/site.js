@@ -3,8 +3,8 @@ export const site = {
   email: 'menoel888@gmail.com',
   location: 'Montréal, QC',
   github: 'https://github.com/nonowelle',
-  linkedin: 'https://www.linkedin.com/in/', // TODO: add handle
-  resume: '/cv-marie-eve-noel.pdf', // drop the PDF in /public
+  linkedin: 'https://www.linkedin.com/in/marie-%C3%A8ve-no%C3%ABl',
+  resume: '/cv-marie-eve-noel.pdf', 
 }
 
 export const nav = [
