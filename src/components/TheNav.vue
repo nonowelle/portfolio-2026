@@ -1,6 +1,7 @@
 <script setup>
 import { ref, watch, onBeforeUnmount } from 'vue'
 import { nav } from '../data/site'
+import ThemeToggle from './ThemeToggle.vue'
 
 const open = ref(false)
 
@@ -37,9 +38,12 @@ onBeforeUnmount(() => {
         {{ item.label }}
       </a>
       <a href="#contact" class="btn btn--small">Get in touch</a>
+      <ThemeToggle />
     </div>
 
-    <!-- Burger (mobile only) -->
+    <!-- Mobile controls: theme toggle + burger -->
+    <div class="nav__mobile-controls">
+    <ThemeToggle />
     <button
       class="nav__burger"
       type="button"
@@ -52,6 +56,7 @@ onBeforeUnmount(() => {
       <span class="nav__burger-line" :class="{ 'is-open': open }"></span>
       <span class="nav__burger-line" :class="{ 'is-open': open }"></span>
     </button>
+    </div>
 
     <!-- Mobile menu -->
     <Transition name="menu">
@@ -106,9 +111,16 @@ onBeforeUnmount(() => {
   color: var(--accent);
 }
 
-/* Burger */
-.nav__burger {
+/* Mobile controls */
+.nav__mobile-controls {
   display: none;
+  position: relative;
+  z-index: 3;
+  align-items: center;
+  gap: 4px;
+}
+.nav__burger {
+  display: flex;
   position: relative;
   z-index: 3;
   width: 44px;
@@ -181,7 +193,7 @@ onBeforeUnmount(() => {
   .nav__links {
     display: none;
   }
-  .nav__burger {
+  .nav__mobile-controls {
     display: flex;
   }
 }

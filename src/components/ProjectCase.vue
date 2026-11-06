@@ -89,7 +89,7 @@ defineProps({
 }
 .tag {
   padding: 6px 12px;
-  border: 1px solid #cfd3d3;
+  border: 1px solid var(--tag-border);
   border-radius: var(--radius);
   font-size: 12px;
   color: var(--ink-2);

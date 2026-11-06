@@ -9,9 +9,15 @@
   --rule-dark: #33403d;
   --accent: #0a5259;
   --accent-hover: #063a3f;
-  --accent-on-dark: #8fd3c8;
-  --muted-on-dark: #c6cdca;
-  --label-on-dark: #9aa6a3;
+  --tag-border: #cfd3d3;
+
+  /* "About" band — stays dark in both themes */
+  --band-bg: #17201f;
+  --band-fg: #ffffff;
+  --band-muted: #c6cdca;
+  --band-label: #9aa6a3;
+  --band-rule: #33403d;
+  --band-accent: #8fd3c8;
 
   --font-serif: 'Newsreader', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
@@ -20,6 +26,30 @@
   --container: 1280px;
   --gutter: 40px;
   --radius: 6px;
+
+  color-scheme: light;
+}
+
+/* ---------- Dark theme ---------- */
+:root[data-theme='dark'] {
+  --ground: #0f1413;
+  --ground-2: #161c1b;
+  --ink: #f2f4f3;
+  --ink-2: #c6cdca;
+  --ink-3: #8f9a97;
+  --rule: #273130;
+  --accent: #8fd3c8;
+  --accent-hover: #b2e3db;
+  --tag-border: #3a4644;
+
+  --band-bg: #161c1b;
+  --band-fg: #f2f4f3;
+  --band-muted: #c6cdca;
+  --band-label: #8f9a97;
+  --band-rule: #2c3836;
+  --band-accent: #8fd3c8;
+
+  color-scheme: dark;
 }
 
 /* ---------- Base ---------- */
@@ -37,6 +67,7 @@ body {
   margin: 0;
   background: var(--ground);
   color: var(--ink);
+  transition: background-color 0.25s ease, color 0.25s ease;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
@@ -112,6 +143,24 @@ p {
   border-color: var(--accent-hover);
   color: var(--ground);
 }
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.icon-btn:hover {
+  color: var(--accent);
+  background: var(--ground-2);
+}
+
 .btn--small {
   height: 40px;
   padding: 0 18px;

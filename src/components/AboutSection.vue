@@ -33,8 +33,8 @@ import { timeline } from '../data/site'
 
 <style scoped>
 .about {
-  background: var(--ink);
-  color: var(--ground);
+  background: var(--band-bg);
+  color: var(--band-fg);
 }
 .about__inner {
   padding-block: 112px;
@@ -46,19 +46,19 @@ import { timeline } from '../data/site'
   gap: 28px;
 }
 .about__label {
-  color: var(--label-on-dark);
+  color: var(--band-label);
 }
 .about__title {
   font-size: clamp(40px, 4vw, 56px);
   line-height: 1.12;
 }
 .about__accent {
-  color: var(--accent-on-dark);
+  color: var(--band-accent);
 }
 .about__text {
   font-size: 17px;
   line-height: 1.6;
-  color: var(--muted-on-dark);
+  color: var(--band-muted);
   max-width: 480px;
 }
 .about__timeline {
@@ -73,13 +73,13 @@ import { timeline } from '../data/site'
   grid-template-columns: 140px 1fr 1fr;
   gap: 24px;
   padding-block: 22px;
-  border-top: 1px solid var(--rule-dark);
+  border-top: 1px solid var(--band-rule);
 }
 .about__row:last-child {
-  border-bottom: 1px solid var(--rule-dark);
+  border-bottom: 1px solid var(--band-rule);
 }
 .about__when {
-  color: var(--label-on-dark);
+  color: var(--band-label);
 }
 dd {
   margin: 0;
@@ -88,7 +88,7 @@ dd {
   font-weight: 500;
 }
 .about__where {
-  color: var(--muted-on-dark);
+  color: var(--band-muted);
 }
 @media (max-width: 860px) {
   .about__inner {
