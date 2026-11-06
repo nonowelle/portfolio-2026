@@ -1,6 +1,6 @@
 # menoel.com — portfolio (Vue 3 + Vite)
 
-Homepage of the redesigned portfolio, exported from the design canvas as a Vue 3 project.
+Homepage of the redesigned portfolio
 
 ## Run it
 
