@@ -13,11 +13,16 @@ export const nav = [
   { label: 'Contact', href: '#contact' },
 ]
 
-export const facts = [
-  'Vue.js · SCSS · Sitecore',
-  'Design systems & CMS',
-  'Cypress · Vitest · Core Web Vitals',
-  'FR · EN · ES',
+// Technology logos shown in the strip under the hero (monochrome SVGs in /public/logos)
+export const stack = [
+  { name: 'Vue.js', icon: '/logos/vuedotjs.svg' },
+  { name: 'JavaScript', icon: '/logos/javascript.svg' },
+  { name: 'Sass', icon: '/logos/sass.svg' },
+  { name: 'Sitecore', icon: '/logos/sitecore.svg' },
+  { name: 'Cypress', icon: '/logos/cypress.svg' },
+  { name: 'Vitest', icon: '/logos/vitest.svg' },
+  { name: 'Figma', icon: '/logos/figma.svg' },
+  { name: 'Google Tag Manager', icon: '/logos/googletagmanager.svg' },
 ]
 
 export const projects = [
@@ -35,21 +40,8 @@ export const projects = [
     repo: null,
   },
   {
-    id: 'planties',
-    index: '02',
-    meta: 'Personal project',
-    title: 'Planties',
-    description:
-      'A full-stack web app for people who are crazy about plants. Built end to end — Express and MongoDB on the back, server-rendered EJS templates and Bootstrap on the front.',
-    tags: ['Node.js', 'Express', 'MongoDB', 'EJS', 'Bootstrap'],
-    image: '/images/planties.jpg',
-    alt: 'Planties homepage',
-    url: 'https://planties.onrender.com/',
-    repo: 'https://github.com/nonowelle/planties',
-  },
-  {
     id: 'benoit-charlie',
-    index: '03',
+    index: '02',
     meta: 'Client project',
     title: 'Benoît & Charlie',
     description:
@@ -59,6 +51,19 @@ export const projects = [
     alt: 'Benoît et Charlie wedding site',
     url: 'https://charlie-benoit-wedding-fe.onrender.com/',
     repo: 'https://github.com/nonowelle/charlie-benoit',
+  },
+  {
+    id: 'planties',
+    index: '03',
+    meta: 'Personal project',
+    title: 'Planties',
+    description:
+      'A full-stack web app for people who are crazy about plants. Built end to end — Express and MongoDB on the back, server-rendered EJS templates and Bootstrap on the front.',
+    tags: ['Node.js', 'Express', 'MongoDB', 'EJS', 'Bootstrap'],
+    image: '/images/planties.jpg',
+    alt: 'Planties homepage',
+    url: 'https://planties.onrender.com/',
+    repo: 'https://github.com/nonowelle/planties',
   },
 ]
 

@@ -4,7 +4,6 @@ import { site } from '../data/site'
 
 <template>
   <header id="top" class="hero container">
-    <p class="mono">Front-end developer · {{ site.location }}</p>
 
     <h1 class="hero__title">
       I build the websites <span class="hero__accent">AI companies</span> show the world.
@@ -13,13 +12,13 @@ import { site } from '../data/site'
     <div class="grid-12 hero__row">
       <p class="hero__lede">
         I'm Marie-Ève, a French-Canadian front-end developer. For the past five years I've
-        worked on the front end of <a href="https://www.coveo.com">coveo.com</a> — landing
+        worked on the front end of <a href="https://www.coveo.com">coveo.com</a>: landing
         pages, a design system, and a CMS that lets marketers ship without waiting on
         engineering.
       </p>
       <div class="hero__actions">
         <a href="#work" class="btn btn--primary">
-          See selected work
+          Portfolio
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path
               d="M3 8h10M9 4l4 4-4 4"

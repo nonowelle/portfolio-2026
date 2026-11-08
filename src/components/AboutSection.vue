@@ -11,12 +11,10 @@ import { timeline } from '../data/site'
           A developer who's <span class="about__accent">good with people</span>.
         </h2>
         <p class="about__text">
-          Most of my day is spent with designers, marketers and other engineers, and I like it
-          that way. I ask questions early, explain trade-offs without jargon, and I'm happy to be
+          Most of my day is spent with designers, marketers and other engineers. I ask questions early, explain trade-offs without jargon, and I'm happy to be
           the person who makes the team's work easier to ship. I came to code after a few years in
           marketing, so I'm comfortable in the room where the message gets decided. I mostly work
-          in Vue.js, I'm always trying new tools, and I switch between French, English and Spanish
-          without noticing.
+          in Vue.js and I'm always trying new tools.
         </p>
       </div>
 

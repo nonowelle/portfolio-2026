@@ -1,15 +1,12 @@
 <script setup>
 import { projects } from '../data/site'
 import ProjectCase from './ProjectCase.vue'
-
-const count = String(projects.length).padStart(2, '0')
 </script>
 
 <template>
   <section id="work" class="work container">
     <div class="work__head">
       <h2 class="work__title">Selected work</h2>
-      <span class="mono">{{ count }} projects</span>
     </div>
 
     <div class="work__list">
