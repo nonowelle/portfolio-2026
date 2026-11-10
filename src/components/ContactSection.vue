@@ -5,7 +5,6 @@ import { site } from '../data/site'
 <template>
   <section id="contact" class="contact">
     <div class="contact__inner container">
-      <span class="mono">Contact</span>
       <h2 class="contact__title">
         Working on something? <span class="contact__accent">Let's talk.</span>
       </h2>

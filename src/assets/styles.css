@@ -11,12 +11,12 @@
   --accent-hover: #063a3f;
   --tag-border: #cfd3d3;
 
-  /* "About" band — stays dark in both themes */
-  --band-bg: #17201f;
-  --band-fg: #ffffff;
-  --band-muted: #c6cdca;
-  --band-label: #9aa6a3;
-  --band-rule: #33403d;
+  /* "About" band — dark, but a softer slate rather than near-black */
+  --band-bg: #2f3b39;
+  --band-fg: #f4f6f5;
+  --band-muted: #cfd6d3;
+  --band-label: #a3aeab;
+  --band-rule: #46534f;
   --band-accent: #8fd3c8;
 
   --font-serif: 'Newsreader', Georgia, serif;

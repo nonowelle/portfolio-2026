@@ -18,7 +18,7 @@ defineProps({
     </a>
 
     <div class="case__body">
-      <span class="mono">{{ project.index }} — {{ project.meta }}</span>
+      <span class="mono">{{ project.meta }}</span>
       <h3 class="case__title">{{ project.title }}</h3>
       <p class="case__desc">{{ project.description }}</p>
 
@@ -39,9 +39,6 @@ defineProps({
   align-items: end;
   padding-block: 40px;
   border-top: 1px solid var(--rule);
-}
-.case--last {
-  border-bottom: 1px solid var(--rule);
 }
 .case__shot {
   grid-column: span 7;

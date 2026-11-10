@@ -58,7 +58,7 @@ export const projects = [
     meta: 'Personal project',
     title: 'Planties',
     description:
-      'A full-stack web app for people who are crazy about plants. Built end to end — Express and MongoDB on the back, server-rendered EJS templates and Bootstrap on the front.',
+      'My first full web app: a plant-tracking tool for people who are crazy about plants. Built end to end — Express and MongoDB on the back, server-rendered EJS templates and Bootstrap on the front.',
     tags: ['Node.js', 'Express', 'MongoDB', 'EJS', 'Bootstrap'],
     image: '/images/planties.jpg',
     alt: 'Planties homepage',

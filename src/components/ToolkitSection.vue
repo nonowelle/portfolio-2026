@@ -5,7 +5,6 @@ import { toolkit } from '../data/site'
 <template>
   <section class="toolkit container grid-12">
     <div class="toolkit__intro">
-      <span class="mono">Toolkit</span>
       <h2 class="toolkit__title">What I reach for</h2>
     </div>
 

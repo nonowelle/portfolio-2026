@@ -6,7 +6,6 @@ import { timeline } from '../data/site'
   <section id="about" class="about">
     <div class="about__inner container grid-12">
       <div class="about__intro">
-        <span class="mono about__label">About</span>
         <h2 class="about__title">
           A developer who's <span class="about__accent">good with people</span>.
         </h2>
@@ -42,9 +41,6 @@ import { timeline } from '../data/site'
   display: flex;
   flex-direction: column;
   gap: 28px;
-}
-.about__label {
-  color: var(--band-label);
 }
 .about__title {
   font-size: clamp(40px, 4vw, 56px);
