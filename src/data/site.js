@@ -42,10 +42,10 @@ export const projects = [
   {
     id: 'nido',
     index: '02',
-    meta: '2025 · Website redesign',
+    meta: '2025 · Homepage redesign',
     title: 'Nido',
     description:
-      'A marketing site redesign for Nido, a quoting platform for heat pump installers. Built in Vue 3 and Vite from reusable, responsive section components. All page copy lives in Markdown front matter, so the text can change without touching the code.',
+      'A homepage redesign for Nido, a quoting platform for heat pump installers. Built in Vue 3 and Vite from reusable, responsive section components. All page copy lives in Markdown front matter, so the text can change without touching the code.',
     tags: ['Vue.js', 'Vite', 'Sass', 'Markdown'],
     image: '/images/nido.jpg',
     alt: 'Nido homepage',
