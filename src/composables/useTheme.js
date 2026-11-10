@@ -3,12 +3,10 @@ import { ref, watch } from 'vue'
 const STORAGE_KEY = 'theme'
 const root = document.documentElement
 
-function systemTheme() {
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-}
+const DEFAULT_THEME = 'dark'
 
-// Initial value: saved choice, else the system preference
-const theme = ref(root.dataset.theme || localStorage.getItem(STORAGE_KEY) || systemTheme())
+// Initial value: the visitor's saved choice, else dark
+const theme = ref(root.dataset.theme || localStorage.getItem(STORAGE_KEY) || DEFAULT_THEME)
 
 watch(
   theme,
@@ -18,11 +16,6 @@ watch(
   },
   { immediate: true },
 )
-
-// Follow the OS if the user never made an explicit choice
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-  if (!localStorage.getItem(STORAGE_KEY)) theme.value = e.matches ? 'dark' : 'light'
-})
 
 export function useTheme() {
   const isDark = () => theme.value === 'dark'
