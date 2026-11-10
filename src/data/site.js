@@ -40,8 +40,21 @@ export const projects = [
     repo: null,
   },
   {
-    id: 'benoit-charlie',
+    id: 'nido',
     index: '02',
+    meta: '2025 · Website redesign',
+    title: 'Nido',
+    description:
+      'A marketing site redesign for Nido, a quoting platform for heat pump installers. Built in Vue 3 and Vite from reusable, responsive section components. All page copy lives in Markdown front matter, so the text can change without touching the code.',
+    tags: ['Vue.js', 'Vite', 'Sass', 'Markdown'],
+    image: '/images/nido.jpg',
+    alt: 'Nido homepage',
+    url: 'https://nido-redesign.vercel.app/',
+    repo: 'https://github.com/nonowelle/nido-redesign',
+  },
+  {
+    id: 'benoit-charlie',
+    index: '03',
     meta: 'Client project',
     title: 'Benoît & Charlie',
     description:
@@ -54,7 +67,7 @@ export const projects = [
   },
   {
     id: 'planties',
-    index: '03',
+    index: '04',
     meta: 'Personal project',
     title: 'Planties',
     description:
